@@ -1,0 +1,6 @@
+{
+  "name": "GRIND NYC | Coffee, Bagels & NYC Energy",
+  "description": "Hell's Kitchen premier coffee shop and bagel house at 602 9th Ave, NYC. Specialty coffee, artisanal kettle bagels, breakfast sandwiches, and authentic NYC energy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

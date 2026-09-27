@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRIND NYC | Coffee, Bagels & NYC Energy</title>
+    <meta name="description" content="Hell's Kitchen premier coffee shop and bagel house at 602 9th Ave, NYC. Specialty coffee, artisanal kettle bagels, breakfast sandwiches, and authentic NYC energy." />
+    <meta name="keywords" content="GRIND NYC, Hell's Kitchen coffee, NYC bagels, 9th Ave coffee shop, fresh bagels Manhattan, Freddo Espresso, breakfast sandwiches" />
+    <meta property="og:title" content="GRIND NYC | Coffee, Bagels & NYC Energy" />
+    <meta property="og:description" content="Hell's Kitchen premier coffee shop and bagel house at 602 9th Ave, NYC. Specialty coffee, artisanal kettle bagels, breakfast sandwiches, and authentic NYC energy." />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GRIND NYC | Coffee, Bagels & NYC Energy" />
+    <meta name="twitter:description" content="Good coffee, fresh bagels, and a little New York energy in Hell's Kitchen, NYC." />
+
+    <!-- Google Fonts: Space Grotesk (Primary Display) & Inter (Modern Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for GRIND NYC -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "GRIND NYC",
+      "image": "/src/assets/images/hero_grind_nyc_1790522235581.jpg",
+      "@id": "https://www.grindnyc.com",
+      "url": "https://www.grindnyc.com",
+      "telephone": "+16467558073",
+      "priceRange": "$$",
+      "servesCuisine": ["Coffee", "Bagels", "Breakfast", "Bakery"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "602 9th Ave",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10036",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7594,
+        "longitude": -73.9922
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/grind_nyc",
+        "https://www.grindnyc.com"
+      ]
+    }
+    </script>
+    <!-- Theme pre-hydration script to prevent any flash of unstyled content -->
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('grind-theme') || localStorage.getItem('grind_theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F7F4EE] dark:bg-[#111111] text-[#171717] dark:text-[#F5F1E8] antialiased selection:bg-[#E84E27] selection:text-white theme-transition">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
